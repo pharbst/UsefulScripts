@@ -1,12 +1,12 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    Server-ovpn_service_install.sh                     :+:      :+:    :+:    #
+#    ovpn_service_install.sh                            :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: pharbst <pharbst@student.42heilbronn.de>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/08 09:12:37 by pharbst           #+#    #+#              #
-#    Updated: 2023/12/09 02:54:44 by pharbst          ###   ########.fr        #
+#    Updated: 2023/12/09 03:08:20 by pharbst          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -84,7 +84,6 @@ Type=notify
 ExecStart=$ovpndirectory/ovpn_service.sh
 Restart=unless-stopped
 WorkingDirectory=$ovpndirectory
-User=openvpn
 
 [Install]
 WantedBy=multi-user.target" > /etc/systemd/system/VPN.service
